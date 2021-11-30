@@ -1,2 +1,2 @@
 # Mock A
-## easy
+## Practice Exam for Computer Programming I
