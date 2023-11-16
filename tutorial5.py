@@ -21,10 +21,10 @@ print(" # # # Term 2 # # # ")
 AES2 = int(input("AES: "))
 Maths2 = int(input("Maths 2: "))
 Physics2 = int(input("Physics 2: "))
-Chemistry1 = int(input("Computer Programming 1: "))
+ComputerProgramming2 = int(input("Computer Programming 2: "))
 
 # This checks that grades are between 0 and 100
-if AES2 < 0 or Maths2 < 0 or Physics2 < 0 or Chemistry1 < 0 or AES2 > 100 or Maths2 > 100 or Physics2 > 100 or Chemistry1 > 100:
+if AES2 < 0 or Maths2 < 0 or Physics2 < 0 or ComputerProgramming2 < 0 or AES2 > 100 or Maths2 > 100 or Physics2 > 100 or ComputerProgramming2 > 100:
     print("That is not a valid input. Goodbye.")
     quit()
 else:
@@ -47,12 +47,12 @@ else:
 
 
 # Did they progress?
-TotalAverage = (AES1+Maths1+Physics1+ComputerProgramming1+AES2+Chemistry1+Maths2+Physics2+AES3+Maths3+Physics3+CreativeDesign)/12
+TotalAverage = (AES1+Maths1+Physics1+ComputerProgramming1+AES2+ComputerProgramming2+Maths2+Physics2+AES3+Maths3+Physics3+CreativeDesign)/12
 MathsAverage = (Maths2+Maths3)/2
 
 
 # First check if they scored at least 40% in every subject
-if AES1 < 40 or Maths1 < 40 or Physics1 < 40 or ComputerProgramming1 < 40 or AES2 < 40 or Chemistry1 < 40 or Maths2 < 40 or Physics2 < 40 or AES3 < 40 or Maths3 < 40 or Physics3 < 40 or CreativeDesign < 40:
+if AES1 < 40 or Maths1 < 40 or Physics1 < 40 or ComputerProgramming1 < 40 or AES2 < 40 or ComputerProgramming2 < 40 or Maths2 < 40 or Physics2 < 40 or AES3 < 40 or Maths3 < 40 or Physics3 < 40 or CreativeDesign < 40:
     print("Sorry, you do not progress because \nyou did not get at least 40% in each subject")
 elif TotalAverage < 60: # Checks that total average is at least 60
     print("Sorry, you do not progress because \nyou must have at least an average of 60% overall.")
